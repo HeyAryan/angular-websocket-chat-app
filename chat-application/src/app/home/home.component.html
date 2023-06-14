@@ -1,0 +1,21 @@
+<div *ngFor="let room of roomList">
+    <div style="height:120px;width: 100px;background-color: pink;margin: 20px;padding: 20px">
+        <span>
+          {{room.name}}
+          {{room.roomId}}
+        </span>
+        <button [routerLink]="['room/'+room.roomId]">Join Room</button>
+    </div>
+  </div>
+  
+  <!-- <div *ngFor="let message of messageList">
+    <li>
+        {{message}}
+    </li>
+  </div> -->
+  <!-- <input
+    [(ngModel)]="newMessage"
+    (keyup)="$event.keyCode == 13 && sendMessage()"
+  /> -->
+  <!-- <button (click)="sendMessage()">Send Message</button> -->
+  <!-- <button (click)="joinRoom()">Join Room</button> -->
